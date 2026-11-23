@@ -20,7 +20,7 @@ function Validation () {
 
     return (
         <div className="flex flex-col gap-3">
-            {/* <h1 className="pl-20 font-bold text-2xl">Create an account</h1> */}
+            <h1 className="pl-20 font-bold text-2xl">Sign In</h1> 
          <form onSubmit={handleSubmit}>
               <div className="flex gap-2">
                 <p className="pt-1">Email:</p>
