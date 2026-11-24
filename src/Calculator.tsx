@@ -1,19 +1,23 @@
 interface CalProps {
     num : number;
     className? : string;
+    onClick : (num :number) => void;
     
 }
 
-function Calculator ({num,className}: CalProps)  {
+function Calculator ({num,className,onClick}: CalProps)  {
 
     return (
     <div >
-        <button className={"px-2 py-1 mt-2 mb-2 " +className }>{num}</button>
-    
+        <button  
+          onClick = {() => onClick(num)}
+          className={"px-2 py-1 mt-2 mb-2 " +className }> 
+          
+          {num}
 
+          </button>
     </div>
        
-
     )
 }
 
