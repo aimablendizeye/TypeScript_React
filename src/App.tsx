@@ -107,8 +107,9 @@ function handleSign () {
          <Calculator onClick={handleNumberClick} className="text-2xl ml-4 mt-4" num ={2}/>
          <Calculator onClick={handleNumberClick} className="text-2xl ml-4 mt-4" num ={3}/>
          <Characters  onClick={handleOperatorClick} className="bg-amber-600 w-full h-full absolute -top-2" char="+"/>
-         <Calculator onClick={handleNumberClick} className="text-2xl ml-4 mt-4 border-r-0" num ={0} />
-         <Characters className="" char="" />
+         <Calculator onClick={handleNumberClick} className="text-2xl mt-4 w-full col-span-2" num ={0} />
+         <Characters char=""/>
+         
          <Characters onClick={handleDecimals} className="text-3xl ml-4 mb-5" char="."/>
          <Characters onClick={handleEquals}  className="text-3xl mb-5 bg-amber-600 w-full h-full absolute -top-2" char="="/>
 

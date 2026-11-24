@@ -11,8 +11,8 @@ function Calculator ({num,className,onClick}: CalProps)  {
     <div >
         <button  
           onClick = {() => onClick(num)}
-          className={"px-2 py-1 mt-2 mb-2 " +className }> 
-          
+          className={"  px-2 py-1 mt-2 mb-2 " +className }> 
+
           {num}
 
           </button>
