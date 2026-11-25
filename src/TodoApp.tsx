@@ -40,13 +40,15 @@ export default function TodoApp () {
 
             </div>
 
-            <div>
+            <div className='mt-6'>
                 <ul>
                   {tasks.map((task,index) => (
 
-                    <li key={index} className=' flex ml-3 mt-2   space-y-5 '>
-                        {task}
-                        <Trash onClick={() => deleting(index)} className='w-5 h-5 absolute  right-98'/>
+                    <li key={index} className=' flex items-center gap-3 w-full '>
+                        <input type="checkbox" />
+                        <span className='flex-1 min-w-0 wrap-break-words'>{task}</span>
+                      
+                        <Trash onClick={() => deleting(index)} className=' shrink-0 w-4 h-4 text-[#FE2500] absolute bg-[#F1F3F4] cursor-pointer  rounded-full   right-98'/>
                     </li>
                   ))}
                 </ul>
