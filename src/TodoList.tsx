@@ -6,7 +6,7 @@ export default function TodoList() {
   const [tasks, setTasks] = useState<Task[]>([])
 
   function handleAdd() {
-    if (text.trim() === "") return
+    if (text.trim() === "") return;
     setTasks([...tasks, { id: Date.now(), text: text.trim(), done: false }])
     setText("")
   }
